@@ -8,11 +8,6 @@
 
 # palindromo es una frase o palabra que se escribe esactamente igual si la escribimos al reves o al derecho
 
-# def pon_palabra(texto):
-#     palabra_frase = texto
-#     texto = input("Pon la palabra que deseas: ")
-#     print(palabra_frase)
-
 
 def no_espacio(texto):
     nuevo_texto = ""
@@ -36,9 +31,16 @@ def es_palindromo(texto):
     return texto.lower() == texto_de_reverso.lower()
 
 
+def iniciar():
+    frase = input("Pon una palabra o una frase: ")
+    print(frase, es_palindromo(frase))
+    iniciar()
+
+
+iniciar()
 # print(es_palindromo(pon_palabra("")))
 
-print("Abba", es_palindromo("Abba"))
-print("Reconocer", es_palindromo("Reconocer"))
-print("Amo la paloma", es_palindromo("Amo la paloma"))
-print("hola mundo", es_palindromo("hola mundo"))
+# print("Abba", es_palindromo("Abba"))
+# print("Reconocer", es_palindromo("Reconocer"))
+# print("Amo la paloma", es_palindromo("Amo la paloma"))
+# print("hola mundo", es_palindromo("hola mundo"))
