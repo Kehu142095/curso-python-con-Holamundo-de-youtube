@@ -5,7 +5,8 @@ def listas():
     booleans = [True, False, True, True, False,]
     mtriz = [[0, 1], [2, 3]]
     ceros = [0] * 20, [1, 2]
-    print(ceros)
+    alfanumericos = numeros + letras
+    print(alfa)
 
 
 listas()
