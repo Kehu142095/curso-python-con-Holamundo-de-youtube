@@ -6,7 +6,10 @@ def listas():
     mtriz = [[0, 1], [2, 3]]
     ceros = [0] * 20, [1, 2]
     alfanumericos = numeros + letras
-    print(alfa)
+    rango = list(range(1, 11))
+    chars = list("konnichiha")
+
+    print(chars)
 
 
 listas()
