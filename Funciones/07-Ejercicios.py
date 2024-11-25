@@ -32,8 +32,15 @@ def es_palindromo(texto):
 
 
 def iniciar():
-    frase = input("Pon una palabra o una frase: ")
-    print(frase, es_palindromo(frase))
+    # frase = input("Pon una palabra o una frase: ")
+    # print(frase, es_palindromo(frase))
+    while True:
+        # frase = input("$ ")
+        # print(frase)
+        frase = input("Pon una palabra o una frase: ")
+        print(frase, es_palindromo(frase))
+        if frase.lower() == "salir":
+            break
     iniciar()
 
 
